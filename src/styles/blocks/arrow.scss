@@ -1,0 +1,16 @@
+.arrow {
+  height: 26px;
+  width: 30px;
+  cursor: pointer;
+
+  &-left {
+    background-image: url(../images/slider/arrow-left.svg);
+  }
+
+  &-right {
+    background-image: url(../images/slider/arrow-left.svg);
+    rotate: 180deg;
+  }
+
+  @include hover(transform, scale(1.2));
+}

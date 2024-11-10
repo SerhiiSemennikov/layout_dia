@@ -1,7 +1,61 @@
-@import 'utils';
-@import 'fonts';
-@import 'typography';
+@import './utils';
+@import './fonts';
+@import './typography';
+@import './blocks/header';
+@import './blocks/page';
+@import './blocks/top-bar';
+@import './blocks/nav-top';
+@import './blocks/icon';
+@import './blocks/nav';
+@import './blocks/menu';
+@import './blocks/arrow';
+@import './blocks/main';
+@import './blocks/expertize';
+@import './blocks/our-expertise';
+@import './blocks/about-us';
+@import './blocks/section-title';
+@import './blocks/section';
+@import './blocks/services';
+@import './blocks/card';
+@import './blocks/learn-more';
 
+/*
+@import './blocks/body';
+@import './blocks/slider';
+
+
+
+
+
+
+
+@import './blocks/testimonials';
+@import './blocks/user';
+@import './blocks/blue-rectangle';
+@import './blocks/synergy';
+@import './blocks/contact-us';
+@import './blocks/form';
+@import './blocks/input';
+@import './blocks/contacts';
+@import './blocks/social-media-icons';
+@import './blocks/footer';
+@import './blocks/nav-bottom';
+
+
+@import './blocks/icon';
+@import './blocks/menu';
+@import './blocks/nav';
+
+@import './blocks/product';
+@import './blocks/section-title';
+@import './blocks/recommended';
+@import './blocks/details';
+@import './blocks/footer';
+@import './blocks/contacts';
+@import './blocks/button';
+@import './blocks/about-us';
+@import './blocks/main'
+*/
 body {
   background: $c-gray;
 }

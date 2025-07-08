@@ -10,13 +10,14 @@
   }
 
   &__list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-
     display: flex;
     flex-direction: column;
     gap: 24px;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
 
     @include on-tablet {
       flex-direction: row;
@@ -30,14 +31,15 @@
 
   &__link {
     display: block;
-    text-decoration: none;
-    color: $header-menu-text-color;
+
     font-family: $main-font-family;
-    font-weight: 700;
     font-size: 13px;
+    font-weight: 700;
     line-height: 19.5px;
-    letter-spacing: 3px;
+    color: $header-menu-text-color;
+    text-decoration: none;
     text-transform: uppercase;
+    letter-spacing: 3px;
 
     @include hover(letter-spacing, 7px);
 

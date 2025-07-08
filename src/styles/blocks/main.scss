@@ -1,10 +1,12 @@
 .main {
-  color: $title-text-color;
-  background-color: $main-bg-color;
-
   display: grid;
   row-gap: 120px;
+
   padding-block: 120px;
+
+  color: $title-text-color;
+
+  background-color: $main-bg-color;
 
   @include on-tablet {
     row-gap: 148px;

@@ -58,18 +58,19 @@
   --columns: 2;
 
   display: grid;
-  column-gap: 20px;
-
   grid-template-columns: repeat(var(--columns), 1fr);
+  column-gap: 20px;
 
   @include on-tablet {
     --columns: 6;
+
     gap: 30px;
     column-gap: 30px;
   }
 
   @include on-small-desktop {
     --columns: 12;
+
     gap: 20px;
     column-gap: 20px;
   }

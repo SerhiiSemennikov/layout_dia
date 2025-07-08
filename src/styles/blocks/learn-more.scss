@@ -1,32 +1,37 @@
 .learn-more {
-  height: 40px;
-  width: 143px;
-
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+
+  width: 143px;
+  height: 40px;
+
   text-decoration: none;
+
   transition: $std-transition;
 
   &__icon {
-    height: 40px;
     width: 40px;
-    background-color: $highlight-color;
+    height: 40px;
     border-radius: 50%;
 
+    background-color: $highlight-color;
     background-image: url(../images/sub-title/mdi_arrow_forward.png);
     background-repeat: no-repeat;
     background-position: center;
+
     transition: $std-transition;
   }
   &__icon1 {
-    height: 40px;
     width: 40px;
-    background-color: $red;
+    height: 40px;
     border-radius: 50%;
+
+    background-color: $red;
     background-image: url(../images/sub-title/mdi_arrow_forward.png);
     background-repeat: no-repeat;
     background-position: center;
+
     transition: $std-transition;
   }
 
@@ -36,6 +41,7 @@
     font-weight: 600;
     line-height: 22.5px;
     color: $learn-more-text-color;
+
     transition: $std-transition;
   }
 

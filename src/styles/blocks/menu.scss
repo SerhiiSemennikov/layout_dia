@@ -2,19 +2,21 @@
 
 .menu {
   height: 503px;
-  background-color: $header-footer-bg-color;
 
   font-family: $main-font-family;
-  font-weight: 600;
   font-size: 25px;
+  font-weight: 600;
   letter-spacing: 2px;
+
+  background-color: $header-footer-bg-color;
+
   transition: $std-transition;
 
   &__top {
-    margin-bottom: 28px;
-    top: 0;
     position: sticky;
     z-index: 1;
+    top: 0;
+    margin-bottom: 28px;
   }
 }
 

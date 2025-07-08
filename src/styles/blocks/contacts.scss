@@ -14,15 +14,17 @@
   }
 
   &__title {
+    padding-bottom: 8px;
+
     font-family: $main-font-family;
-    font-weight: 700;
     font-size: 13px;
+    font-weight: 700;
     line-height: 19.5px;
-    letter-spacing: 3px;
     color: $header-menu-text-color;
     text-transform: uppercase;
+    letter-spacing: 3px;
+
     opacity: 50%;
-    padding-bottom: 8px;
 
     .contacts__our-socials & {
       padding-bottom: 16px;
@@ -34,8 +36,8 @@
     font-size: 24px;
     font-weight: 600;
     line-height: 36px;
-    text-decoration: none;
     color: $header-menu-text-color;
+    text-decoration: none;
 
     @include hover(color, $highlight-color);
   }

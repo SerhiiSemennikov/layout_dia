@@ -1,15 +1,15 @@
 .arrow {
-  height: 26px;
-  width: 30px;
   cursor: pointer;
+  width: 30px;
+  height: 26px;
 
   &-left {
     background-image: url(../images/slider/arrow-left.svg);
   }
 
   &-right {
-    background-image: url(../images/slider/arrow-left.svg);
     rotate: 180deg;
+    background-image: url(../images/slider/arrow-left.svg);
   }
 
   @include hover(transform, scale(1.2));

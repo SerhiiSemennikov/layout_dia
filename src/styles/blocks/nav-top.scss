@@ -5,35 +5,37 @@
 
   &__list {
     display: flex;
-    list-style: none;
     gap: 48px;
+    list-style: none;
   }
 
   &__link {
     display: block;
-    text-decoration: none;
-    color: $header-menu-text-color;
 
     font-family: $main-font-family;
     font-size: 13px;
     font-weight: 700;
     line-height: 19.5px;
-    letter-spacing: 3px;
+    color: $header-menu-text-color;
+    text-decoration: none;
     text-transform: uppercase;
+    letter-spacing: 3px;
     white-space: nowrap;
 
-    &:hover::after{
-      position: absolute;
+    &:hover::after {
       content: '';
-      height: 2px;
-      width: 100%;
-      background-color: #2060f6;
-      border-radius: 4px;
+
+      position: absolute;
       bottom: -5px;
       left: 0;
+
+      width: 100%;
+      height: 2px;
+      border-radius: 4px;
+
+      background-color: #2060f6;
     }
+
     @include hover(scale, 1.2);
-
   }
-
 }

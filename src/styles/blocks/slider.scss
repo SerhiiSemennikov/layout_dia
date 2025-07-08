@@ -1,6 +1,6 @@
 .image-slider {
-  margin-top: 48px;
   height: 390px;
+  margin-top: 48px;
 
   @include on-small-desktop {
     height: 680px;
@@ -10,17 +10,18 @@
     display: flex;
     flex-direction: column;
     justify-content: end;
+
     box-sizing: border-box;
-    padding: 24px 20px;
     height: 100%;
-
+    padding: 24px 20px;
     border-radius: 30px;
-    background-size: cover;
-    background-position: center;
 
-    color: #fff;
-    line-height: 20px;
     font-size: 14px;
+    line-height: 20px;
+    color: #fff;
+
+    background-position: center;
+    background-size: cover;
 
     @include on-tablet {
       padding: 40px 32px;
@@ -37,20 +38,19 @@
     }
 
     &--parent {
-      font-family: Poppins, sans-serif;
-      font-weight: 700;
       margin: 0;
       margin-bottom: 8px;
 
+      font-family: Poppins, sans-serif;
+      font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 3px;
     }
 
     &--child {
+      margin: 0;
       font-family: 'Open Sans', sans-serif;
       font-weight: 400;
-
-      margin: 0;
     }
 
     &--first {
@@ -67,11 +67,13 @@
 
 .buttons__container {
   position: absolute;
-  width: 80px;
-  display: flex;
-  justify-content: space-between;
   bottom: 108px;
   left: 20px;
+
+  display: flex;
+  justify-content: space-between;
+
+  width: 80px;
 
   @include on-tablet {
     bottom: 116px;
@@ -89,18 +91,18 @@
 }
 
 .slider-buttons {
+  position: relative;
+  top: 0;
+  right: 0;
+  left: 0;
+
   width: 32px;
   height: 32px;
   margin: 0;
-  background-color: #fff;
-  background-size: cover;
-
   border-radius: 50%;
 
-  position: relative;
-  top: 0;
-  left: 0;
-  right: 0;
+  background-color: #fff;
+  background-size: cover;
 
   &::after {
     content: none;

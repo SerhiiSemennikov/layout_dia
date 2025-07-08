@@ -16,9 +16,9 @@
     @include on-tablet {
       height: 509px;
       margin-top: 63px;
+
       background-image: url(../images/Shapes.png);
       background-position: center;
-
       background-size: 1058px 509px;
     }
 
@@ -27,8 +27,8 @@
     }
 
     @include on-the-design {
-      margin-top: 72px;
       height: 547px;
+      margin-top: 72px;
       background-size: contain;
     }
   }
@@ -39,7 +39,6 @@
     @include on-tablet {
       margin-top: 0;
       padding-top: 137px;
-
       font-size: 52px;
       line-height: 62.4px;
     }
@@ -55,41 +54,44 @@
   }
 
   &__text {
-    font-family: $secondary-font-family;
-    font-weight: 600;
-    font-size: 22px;
-    line-height: 33px;
-    text-align: center;
-    color: $main-text-color;
     margin-bottom: 56px;
 
+    font-family: $secondary-font-family;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 33px;
+    color: $main-text-color;
+    text-align: center;
+
     @include on-tablet {
+      margin-bottom: 64px;
       font-size: 24px;
       line-height: 36px;
-      margin-bottom: 64px;
     }
 
     @include on-small-desktop {
-      margin-inline: auto;
-
       width: 754px;
+      margin-inline: auto;
     }
   }
 
   &__link {
     all: unset;
-    cursor: pointer;
-    text-decoration: none;
 
-    background-color: $highlight-color;
-    height: 56px;
-    width: 280px;
-    border-radius: 8px;
-    margin: 0 auto;
+    cursor: pointer;
 
     display: flex;
     align-items: center;
     justify-content: center;
+
+    width: 280px;
+    height: 56px;
+    margin: 0 auto;
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    background-color: $highlight-color;
 
     @include on-tablet {
       width: 264px;
@@ -97,10 +99,11 @@
 
     &--text {
       font-family: $main-text-color;
-      color: $header-menu-text-color;
       font-size: 15px;
       font-weight: 600;
       line-height: 22.5px;
+      color: $header-menu-text-color;
+
       transition: $std-transition;
     }
 

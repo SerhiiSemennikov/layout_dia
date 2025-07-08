@@ -13,17 +13,19 @@
 
   &__button {
     all: unset;
+
     cursor: pointer;
 
-    height: 56px;
-    width: 280px;
-    background-color: $highlight-footer-color;
-    border-radius: 8px;
-    margin-block: 16px 80px;
-
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+
+    width: 280px;
+    height: 56px;
+    margin-block: 16px 80px;
+    border-radius: 8px;
+
+    background-color: $highlight-footer-color;
 
     @include on-tablet {
       width: 264px;
@@ -35,8 +37,9 @@
       font-size: 15px;
       font-weight: 600;
       line-height: 22.5px;
-      text-align: center;
       color: $header-menu-text-color;
+      text-align: center;
+
       transition: $std-transition;
     }
 

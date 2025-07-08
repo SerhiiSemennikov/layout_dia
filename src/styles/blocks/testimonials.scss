@@ -5,9 +5,9 @@
 
   &__title {
     @include on-tablet {
-      text-align: left;
       width: 200px;
       margin-bottom: 56px;
+      text-align: left;
     }
 
     @include on-small-desktop {

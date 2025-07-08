@@ -1,12 +1,15 @@
+
 .user {
-  height: 456px;
   max-width: 558px;
-  background-color: $secondary-bg-color;
-  border-radius: 16px;
-  box-shadow: 0 9px 18px 0 #25293108;
+  height: 456px;
   margin: 0 auto;
   padding: 75px 32px 0;
+  border-radius: 16px;
 
+  background-color: $secondary-bg-color;
+  box-shadow: 0 9px 18px 0 #25293108;
+  
+// eslint-disable-next-line no-use-before-define
   @for $i from 1 through length($users-photo) {
     &:nth-child(#{$i}) {
       .user__avatar--image {
@@ -16,87 +19,63 @@
   }
 
   @include on-tablet {
-    height: 478px;
     width: 558px;
+    height: 478px;
     padding: 87px 98px 0;
   }
 
   @include on-small-desktop {
     grid-column: span 4;
-    height: 456px;
+
     width: auto;
     max-width: none;
+    height: 456px;
     padding: 75px 43px 0;
   }
 
   @include on-the-design {
-    height: 494px;
     max-width: 362px;
+    height: 494px;
     padding: 87px 56px 0;
   }
 
   &__avatar {
     position: relative;
-    height: 110px;
-    width: 110px;
-    border-radius: 50%;
     z-index: 1;
 
     display: flex;
+
+    width: 110px;
+    height: 110px;
     margin: 0 auto 67px;
-
-    @include on-tablet {
-      height: 140px;
-      width: 140px;
-      margin-bottom: 79px;
-    }
-
-    @include on-small-desktop {
-      height: 110px;
-      width: 110px;
-      margin-bottom: 67px;
-    }
-
-    @include on-the-design {
-      height: 140px;
-      width: 140px;
-      margin-bottom: 79px;
-    }
-
-    &--image {
-      height: 100%;
-      width: 100%;
-      border-radius: 50%;
-      background-size: cover;
-      background-position: center;
-      z-index: 1;
-
-      @include hover(transform, scale(1.2));
-    }
+    border-radius: 50%;
 
     &::before,
     &::after {
       content: '';
+
       position: absolute;
-      height: 44px;
-      width: 109px;
-      background-color: $highlight-color;
-      border-radius: 12px;
       transform: rotate(-60deg);
 
+      width: 109px;
+      height: 44px;
+      border-radius: 12px;
+
+      background-color: $highlight-color;
+
       @include on-tablet {
-        height: 56px;
         width: 139px;
+        height: 56px;
       }
 
       @include on-small-desktop {
-        height: 44px;
         width: 109px;
+        height: 44px;
       }
 
       @include on-the-design {
-        height: 56px;
         width: 139px;
+        height: 56px;
       }
     }
 
@@ -139,17 +118,49 @@
         left: 50px;
       }
     }
+
+    &--image {
+      z-index: 1;
+
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+
+      background-position: center;
+      background-size: cover;
+
+      @include hover(transform, scale(1.2));
+    }
+
+    @include on-tablet {
+      width: 140px;
+      height: 140px;
+      margin-bottom: 79px;
+    }
+
+    @include on-small-desktop {
+      width: 110px;
+      height: 110px;
+      margin-bottom: 67px;
+    }
+
+    @include on-the-design {
+      width: 140px;
+      height: 140px;
+      margin-bottom: 79px;
+    }
   }
 
   &__quote {
     text-align: center;
 
     &--image {
-      height: 24px;
       width: 24px;
+      height: 24px;
+      margin: 0 auto 8px;
+
       background-image: url(../images/sub-title/“.png);
       background-repeat: no-repeat;
-      margin: 0 auto 8px;
 
       @include on-tablet {
         margin-bottom: 16px;
@@ -161,12 +172,13 @@
     }
 
     &--text {
-      font-family: $secondary-font-family;
-      color: $main-text-color;
-      font-weight: 600;
-      font-size: 13px;
-      line-height: 19.5px;
       margin-bottom: 16px;
+
+      font-family: $secondary-font-family;
+      font-size: 13px;
+      font-weight: 600;
+      line-height: 19.5px;
+      color: $main-text-color;
 
       @include on-small-desktop {
         height: 64px;
@@ -184,22 +196,23 @@
     text-align: center;
 
     &--name {
-      font-family: $secondary-font-family;
-      font-weight: 600;
-      font-size: 13px;
-      line-height: 19.5px;
       margin-bottom: 4px;
+
+      font-family: $secondary-font-family;
+      font-size: 13px;
+      font-weight: 600;
+      line-height: 19.5px;
     }
 
     &--source {
       font-family: $main-font-family;
-      color: $bg-text-color;
-      font-weight: 700;
       font-size: 13px;
+      font-weight: 700;
       line-height: 19.5px;
-      letter-spacing: 3px;
+      color: $bg-text-color;
       text-align: center;
       text-transform: uppercase;
+      letter-spacing: 3px;
     }
   }
 }

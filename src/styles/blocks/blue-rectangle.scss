@@ -1,7 +1,9 @@
 .blue-rectangle {
-  height: 109px;
-  width: 44px;
-  border-radius: 12px;
-  background-color: $highlight-color;
   transform: rotate(30deg);
+
+  width: 44px;
+  height: 109px;
+  border-radius: 12px;
+
+  background-color: $highlight-color;
 }

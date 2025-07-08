@@ -14,7 +14,17 @@
     background-color: $highlight-color;
     border-radius: 50%;
 
-    background-image: url(../images/sub-title/Arrow.png);
+    background-image: url(../images/sub-title/mdi_arrow_forward.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: $std-transition;
+  }
+  &__icon1 {
+    height: 40px;
+    width: 40px;
+    background-color: $red;
+    border-radius: 50%;
+    background-image: url(../images/sub-title/mdi_arrow_forward.png);
     background-repeat: no-repeat;
     background-position: center;
     transition: $std-transition;

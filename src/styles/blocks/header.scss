@@ -5,12 +5,13 @@
   background-color: $header-footer-bg-color;
   color: $header-menu-text-color;
   border-radius: 0 0 30px 30px;
-
   display: flex;
   flex-direction: column;
 
+
   @include on-small-desktop {
     height: 800px;
+   
   }
 
   &::before {
@@ -44,6 +45,7 @@
   }
 
   &__top {
+
     @include content-padding-inline;
 
     @include on-small-desktop {
@@ -71,6 +73,7 @@
       }
 
       @include on-desktop {
+
         width: 490px;
       }
     }

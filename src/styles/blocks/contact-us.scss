@@ -7,15 +7,18 @@
   padding-top: 72px;
 
   @include on-tablet {
+    @include page-grid;
     padding-top: 180px;
-    display: grid;
+
+    /* display: grid;
     grid-template-columns: repeat(6, 1fr);
-    column-gap: 30px;
+    column-gap: 30px; */
   }
 
   @include on-small-desktop {
-    grid-template-columns: repeat(12, 1fr);
-    column-gap: 20px;
+    @include page-grid;
+    /* grid-template-columns: repeat(12, 1fr);
+    column-gap: 20px; */
   }
 
   @include on-the-design {
@@ -41,7 +44,7 @@
     }
 
     @include on-the-design {
-      grid-column: 8 / span 5;
+      grid-column: 8 / span 4;
     }
   }
 

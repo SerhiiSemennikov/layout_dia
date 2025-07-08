@@ -1,4 +1,4 @@
-.synergy {
+.cta {
   height: 571px;
   background-color: $secondary-bg-color;
 
@@ -16,14 +16,14 @@
     @include on-tablet {
       height: 509px;
       margin-top: 63px;
-      background-image: url(../images/Shapes_tablet.png);
+      background-image: url(../images/Shapes.png);
       background-position: center;
-      background-size: cover;
+
+      background-size: 1058px 509px;
     }
 
     @include on-small-desktop {
       margin-top: 83px;
-      background-image: url(../images/Shapes.png);
     }
 
     @include on-the-design {

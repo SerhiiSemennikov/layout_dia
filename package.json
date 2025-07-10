@@ -2,7 +2,6 @@
   "name": "dia",
   "version": "1.0.0",
   "description": "Dia landing page",
-
   "scripts": {
     "init": "mate-scripts init",
     "start": "mate-scripts start",
@@ -31,8 +30,8 @@
     "jest": "^29.7.0",
     "jest-environment-jsdom": "^29.7.0",
     "prettier": "^3.3.2",
-    "stylelint": "^16.7.0",
-    "stylelint-scss": "^6.4.1"
+    "stylelint": "^16.21.1",
+    "stylelint-scss": "^6.12.1"
   },
   "mateAcademy": {
     "projectType": "layout",

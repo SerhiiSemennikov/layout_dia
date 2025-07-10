@@ -1,3 +1,4 @@
+@use 'sass:list';
 
 .user {
   max-width: 558px;
@@ -8,9 +9,8 @@
 
   background-color: $secondary-bg-color;
   box-shadow: 0 9px 18px 0 #25293108;
-  
-// eslint-disable-next-line no-use-before-define
-  @for $i from 1 through length($users-photo) {
+
+  @for $i from 1 through list.length($users-photo) {
     &:nth-child(#{$i}) {
       .user__avatar--image {
         background-image: url(nth($users-photo, $i));

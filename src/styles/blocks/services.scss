@@ -1,8 +1,9 @@
 .services {
-  @include on-tablet{
+  @include on-tablet {
     @include page-grid;
   }
-  //@include page-grid;
+
+  // @include page-grid;
 
   /* @include on-tablet {
     display: grid;

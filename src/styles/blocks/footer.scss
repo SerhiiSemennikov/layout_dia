@@ -1,7 +1,9 @@
 .footer {
   @include content-padding-inline;
-//height: 867px;
+
+  // height: 867px;
   margin-top: -121px;
+  
   // padding-bottom: 80px;
   padding: 80px;
   color: $header-menu-text-color;
